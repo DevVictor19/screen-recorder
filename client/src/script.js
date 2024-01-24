@@ -31,6 +31,7 @@ class ScreenRecorder {
   pause() {
     if (!this.mediaRecorder) return;
     this.mediaRecorder.pause();
+    this.socketClient.emit("pause");
   }
 
   resume() {
