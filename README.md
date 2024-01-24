@@ -4,7 +4,7 @@ Aplicação para gravação de tela em tempo real utilizando Streams e WebSocket
 
 Usando a api nativa de captura de tela do browser é possível transmitir pedaços do vídeo gravado (chunks) para outra fonte, que nesse caso foi um servidor com conexão WebSocket, através das Streams do NodeJS.
 
-O servidor recebe os pedaços em Buffer e grava sequencialmente na Stream leitura existente de forma local no servidor.  
+O servidor recebe os pedaços em Buffer e grava sequencialmente na Stream de escrita (WritableStream) existente de forma local no servidor.  
 
 Vale ressaltar que esse projeto é apenas uma demo. Algo mais elaborado pode ser desenvolvido futuramente.
 
