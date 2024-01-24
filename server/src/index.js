@@ -29,7 +29,7 @@ const io = new Server(server, {
 io.on("connection", (socket) => {
   console.log("User connected");
 
-  let writeStream = createWriteStream(filepath);
+  const writeStream = createWriteStream(filepath);
 
   socket.on("start", (data) => {
     console.log("writing: ", data);
