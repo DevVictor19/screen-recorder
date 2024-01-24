@@ -1,6 +1,12 @@
 # Screen Recorder
 
-Aplicação para gravação de tela em tempo real utilizando Streams e WebSocket, além da api nativa do browser para a captura de tela (MediaRecorder). Usando a api nativa de captura de tela do browser é possível transmitir pedaços do vídeo (chunks) para outra font, que nesse caso foi um servidor com conexão WebSocket.
+Aplicação para gravação de tela em tempo real utilizando Streams e WebSocket, além da api nativa do browser para a captura de tela (MediaRecorder). 
+
+Usando a api nativa de captura de tela do browser é possível transmitir pedaços do vídeo gravado (chunks) para outra fonte através das Streams do NodeJS, que nesse caso foi um servidor com conexão WebSocket. 
+
+O servidor recebe os pedaços em Buffer e grava sequencialmente (Stream) de forma local no servidor.  
+
+Vale ressaltar que esse projeto é apenas uma demo. Algo mais elaborado pode ser desenvolvido futuramente.
 
 ## Executando o projeto
 
