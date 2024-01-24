@@ -6,6 +6,8 @@ Usando a api nativa de captura de tela do browser é possível transmitir pedaç
 
 O servidor recebe os pedaços em Buffer e grava sequencialmente na Stream de escrita (WritableStream) existente de forma local no servidor.  
 
+Além disso, para fornecer o vídeo gravado, na rota http://localhost:3000/video, é usado uma Stream de leitura (ReadableStream) para enviar os pedaços (chunks) do vídeo para o cliente sequencialmente.
+
 Vale ressaltar que esse projeto é apenas uma demo. Algo mais elaborado pode ser desenvolvido futuramente.
 
 ## Executando o projeto
